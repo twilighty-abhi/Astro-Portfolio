@@ -1,0 +1,117 @@
+<div
+  id="pricing"
+  class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-6 col-span-full scroll-mt-24">
+  <section
+    class="h-full p-8 flex flex-col col-span-full md:col-span-1 xl:col-span-3 justify-between order-last md:order-none bg-gray-200 rounded-3xl">
+    <p class="text-2xl xl:text-4xl text-black lg:text-xl  font-display">Interesting things by me</p>
+    <div class="mt-4">
+      <p class="text-base text-gray-600 font-normal text-balance">
+        A place where i share some of my knowledge in bit sized and understandable form.
+      </p>
+      <div class="flex flex-col mt-4">
+        <a
+          href="https://garden.abhiramnj.com/"
+          class="rounded-xl px-8 h-16 border py-2 font-semibold transition-all text-xl flex items-center justify-between bg-white text-gray-600 border-gray-300 focus:ring-2 focus:ring-black focus:ring-offset-2 ring-offset-gray-200 hover:bg-black hover:text-white duration-300">
+          Check Digital Garden🏡
+          <span>&rarr;</span>
+        </a>
+      </div>
+
+      <br>
+      <p class="text-base text-gray-600 font-normal text-balance">
+        Book a call with me. Know more about how i manage things and all.
+        <spanc class="block italic">Not available now</spanc>
+      </p>
+      <div class="flex flex-col mt-4">
+        <button
+          disabled
+          class="rounded-xl px-8 h-16 border py-2 font-semibold transition-all text-xl flex items-center justify-between bg-white text-gray-600 border-gray-300 focus:ring-2 focus:ring-black focus:ring-offset-2 ring-offset-gray-200 hover:bg-black hover:text-white duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
+          Book a call📌
+          <span>&rarr;</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
+    class="h-full rounded-3xl justify-between col-span-full md:col-span-1 xl:col-span-3 bg-gray-200 p-8">
+    <div class="flex flex-col justify-between h-full">
+      <div>
+        <p class="text-2xl xl:text-4xl text-black lg:text-xl  font-display">Things I did🚀</p>
+        <div class="mt-4">
+          <p class="text-base text-gray-600 font-normal text-balance">
+            All the interesting projects, works I did.<br>
+            Feel free to check out!
+          </p>
+          <div class="flex flex-col mt-4">
+            <a href="#" id="projectsButton" class="rounded-xl px-8 h-16 border py-2 font-semibold transition-all text-xl flex items-center justify-between bg-white text-gray-600 border-gray-300 focus:ring-2 focus:ring-black focus:ring-offset-2 ring-offset-gray-200 hover:bg-black hover:text-white duration-300">
+              See projects I did🧭
+              <span>&rarr;</span>
+            </a>
+          </div>
+          
+          <div id="popup" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
+            <div class="bg-white p-8 rounded-xl text-center">
+              <h2 class="text-2xl font-semibold text-gray-800 mb-4">Under Construction</h2>
+              <p class="text-gray-600">This section is currently under construction. Check back later!</p>
+              <button id="closePopup" class="mt-4 px-4 py-2 bg-gray-800 text-white rounded-md">Close</button>
+            </div>
+          </div>
+      <br>
+      <p class="text-base text-gray-600 font-normal text-balance">
+        An log of all events i attended, organised, talked and much more :)
+        <spanc class="block italic">Lot of interesting things in here😉</spanc>
+      </p>
+      <div class="flex flex-col mt-4">
+        <a href="#" id="talksButton" class="rounded-xl px-8 h-16 border py-2 font-semibold transition-all text-xl flex items-center justify-between bg-white text-gray-600 border-gray-300 focus:ring-2 focus:ring-black focus:ring-offset-2 ring-offset-gray-200 hover:bg-black hover:text-white duration-300 no-underline">
+          Talks and events 🗣️
+          <span>&rarr;</span>
+        </a>
+      </div>
+      
+      <div id="talksPopup" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white p-8 rounded-xl text-center">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">Under Construction</h2>
+          <p class="text-gray-600">This section is currently under construction. Check back later!</p>
+          <button id="closeTalksPopup" class="mt-4 px-4 py-2 bg-gray-800 text-white rounded-md">Close</button>
+        </div>
+      </div>
+      
+      
+    </div>
+  </section>
+</div>
+
+
+<script>
+  // Get button and popup elements- projects
+  const projectsButton = document.getElementById('projectsButton');
+  const popup = document.getElementById('popup');
+  const closePopup = document.getElementById('closePopup');
+  
+    // Get button and popup elements-talks
+    const talksButton = document.getElementById('talksButton');
+  const talksPopup = document.getElementById('talksPopup');
+  const closeTalksPopup = document.getElementById('closeTalksPopup');
+
+   // Add click event listener to the button
+   talksButton.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    talksPopup.classList.remove('hidden'); // Show the popup
+  });
+
+  // Add click event listener to the close button
+  closeTalksPopup.addEventListener('click', function() {
+    talksPopup.classList.add('hidden'); // Hide the popup when close button is clicked
+  });
+
+  // Add click event listener to the button
+  projectsButton.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    popup.classList.remove('hidden'); // Show the popup
+  });
+
+  // Add click event listener to the close button
+  closePopup.addEventListener('click', function() {
+    popup.classList.add('hidden'); // Hide the popup when close button is clicked
+  });
+</script>
