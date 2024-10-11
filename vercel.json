@@ -6,9 +6,9 @@
       "permanent": true
     },
     {
-      "source": "/111",
-      "destination": "https://garden.abhiramnj.com/",
-      "permanent": false
+      "source": "/portfolio",
+      "destination": "https://github.com/twilighty-abhi/Astro-Portfolio",
+      "permanent": true
     }
   ]
 }
