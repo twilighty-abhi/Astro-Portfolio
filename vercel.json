@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/wiki",
+      "destination": "https://garden.abhiramnj.com/",
+      "permanent": true
+    },
+    {
+      "source": "/111",
+      "destination": "https://garden.abhiramnj.com/",
+      "permanent": false
+    }
+  ]
+}
