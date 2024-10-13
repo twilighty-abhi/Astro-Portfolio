@@ -9,7 +9,7 @@
       "source": "/portfolio",
       "destination": "https://github.com/twilighty-abhi/Astro-Portfolio",
       "permanent": true
-    },
+    }
 
   ]
 }
