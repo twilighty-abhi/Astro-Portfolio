@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/blur",
-      "destination": "https://blur-brain.vercel.app",
+      "source": "/gitcourse",
+      "destination": "https://tinkerhub.frappe.cloud/courses/launching-git-and-github",
       "permanent": true
     },
     {
