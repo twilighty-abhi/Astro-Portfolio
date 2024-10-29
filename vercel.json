@@ -6,6 +6,11 @@
       "permanent": true
     },
     {
+      "source": "/frappe",
+      "destination": "https://twilighty0abhi.notion.site/Frappe-Master-brains-8f48976d19b345af8279130ba3f3ecc0?pvs=73",
+      "permanent": false
+    },
+    {
       "source": "/foss",
       "destination": "https://chat.whatsapp.com/Dj46wc8SHmwDxx9mf7X5xn",
       "permanent": true
